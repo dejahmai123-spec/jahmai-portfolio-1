@@ -18,16 +18,14 @@
 </nav>
 
 <section class="page-header">
-  <h1>About Me</h1>
+  <h1>Issues</h1>
 </section>
 
 <section class="content">
-  <p>Evening. My name is </strong>Jahmai nicholas, a web devloper and also a web designer.
-    I attend </strong>Dominica State college as a </strong>2nd Semester, I recenlty changed my major from gernral
-    General studies to Information Technologly. I like trading and mentoring peopler under my
-    level beyond my country. I deal with International clients mostly than my own Country. Im not a 
-    fulltime mentor yet, but that is my goal.
-   If you would like to have a conversation with me, please contact me in the contant section.</p>
+  <p> Issue.1 was very difficult to create the animation smoothly, because i needed a 
+modified code to run my exection with the help of <strong>"One Compiler"</p>
+  <p> Issue.2 Most of the codes on the class material was outdated so i had to
+ remasterd it with the help of Ai for speific options(it could be according to the website).</p>
 </section>
 
 <footer>
