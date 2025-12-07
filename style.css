@@ -271,3 +271,32 @@ form input:focus, form textarea:focus {
     transform: translateY(-4px);
     box-shadow: 0 0 12px #00eaff;
 }
+
+/* =========================
+   ISSUE PAGE ANIMATIONS
+========================= */
+
+/* same reveal animation used on contact page */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* smooth fade for issue items */
+.issues-list li {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: 0.6s ease-in-out;
+}
+
+.issues-list li.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
