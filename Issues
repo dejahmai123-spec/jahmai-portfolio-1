@@ -1,43 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Issues | Jahmai Nicolas</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Issues | Jahmai Nicolas</title>
+
+  <!-- Link to your CSS and JS files -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-<nav>
-  <div class="logo">Jahmai's Portfolio</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="Issues.html">Issues</a></li>
-  </ul>
-</nav>
+  <!-- =========================
+       NAVIGATION
+       - The active page uses aria-current for accessibility
+  ========================== -->
+  <nav>
+    <div class="logo">Jahmai's Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <!-- Use a lowercase filename for consistency: issues.html -->
+      <li><a href="issues.html" aria-current="page" class="active">Issues</a></li>
+    </ul>
+  </nav>
 
-<section class="page-header">
-  <h1>Issues</h1>
-</section>
+  <!-- =========================
+       PAGE HEADER
+  ========================== -->
+  <section class="page-header">
+    <h1>Issues</h1>
+    <p class="subtitle">Challenges I encountered while building animations and updating code.</p>
+  </section>
 
-<section class="content">
-  <p> Issue.1 It was very difficult to create the animation smoothly, because i needed a 
-modified code to run my exection with the help of <strong>"One Compiler".</p>
+  <!-- =========================
+       MAIN CONTENT
+       - Use semantic main + article + ol for clarity
+  ========================== -->
+  <main class="content" role="main">
+    <article class="issue-list">
+      <ol>
+        <li>
+          <h3>Issue 1 — Animation timing and smoothness</h3>
+          <p>
+            It was difficult to get the animations to run smoothly because I needed a modified
+            code setup to match the environment I was using (I tested on <strong>One Compiler</strong>).
+            Tweaking easing, durations, and transform properties helped improve smoothness.
+          </p>
+        </li>
 
-  <p> Issue.2 Most of the codes on the class material was outdated so i had to
- remasterd it with the help of Ai for speific options(it could be according to the website).</p>
+        <li>
+          <h3>Issue 2 — Outdated class materials</h3>
+          <p>
+            Many code examples from the class materials were outdated, so I had to update and
+            remaster them — sometimes using AI to suggest modern alternatives for browser compatibility
+            and new CSS/JS APIs.
+          </p>
+        </li>
 
-<p> Issue.3 the hovering animation was quite difficult to process, you must have accurate
-calculations for the animation itself.</p>
-</section>
+        <li>
+          <h3>Issue 3 — Hover/animation accuracy</h3>
+          <p>
+            Hover animations require precise values for transforms, timing, and easing; small values
+            can cause noticeable jitter. I learned to test on multiple screen sizes and inspect the
+            computed styles to refine the effect.
+          </p>
+        </li>
+      </ol>
+    </article>
+  </main>
 
-<footer>
-  <p>© 2025 My portfolio(Jahmai). All Rights Reserved
-    This is an unpaid website so dont be surprise if there are errors in animations(i tried my best to fix it) .</p>
-</footer>
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer>
+    <p>© 2025 Jahmai Nicolas. All rights reserved.</p>
+    <p>
+      Note: This is an unpaid project. There may still be small visual differences across browsers;
+      I'm actively refining the animations.
+    </p>
+  </footer>
 
 </body>
 </html>
