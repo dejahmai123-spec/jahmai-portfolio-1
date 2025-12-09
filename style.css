@@ -300,3 +300,15 @@ form input:focus, form textarea:focus {
   transform: translateX(0);
 }
 
+.issue-list li {
+  margin-bottom: 40px;   /* space between each issue */
+  padding-bottom: 10px;  /* optional: adds a softer gap */
+  border-bottom: 1px solid #ddd; /* optional: visual separator */
+}
+
+/* Remove last separator */
+.issue-list li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
