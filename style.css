@@ -350,3 +350,24 @@ form input:focus, form textarea:focus {
   font-size: 1.4rem;
 }
 
+/* Spacing for About page */
+.page-header {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.content {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 90%;
+  max-width: 900px;
+  line-height: 1.8;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+
