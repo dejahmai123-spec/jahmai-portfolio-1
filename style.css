@@ -366,6 +366,47 @@ form input:focus, form textarea:focus {
   line-height: 1.8;
 }
 
+/* ======================
+   Spacing + Layout
+====================== */
+.page-header {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.content {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* Add spacing above footer */
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+/* ======================
+   Reveal Animations
+====================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 footer {
   margin-top: 40px;
 }
