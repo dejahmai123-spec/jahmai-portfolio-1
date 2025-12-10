@@ -48,22 +48,4 @@ nav .logo {
   font-size: 24px;
   font-
      
-// Select all elements with the 'reveal' class
-const reveals = document.querySelectorAll(".reveal");
 
-function revealOnScroll() {
-  const windowHeight = window.innerHeight;
-
-  reveals.forEach((reveal) => {
-    const elementTop = reveal.getBoundingClientRect().top;
-    const revealPoint = 150; // distance from bottom of viewport
-
-    if (elementTop < windowHeight - revealPoint) {
-      reveal.classList.add("active"); // reveal and stay
-    }
-  });
-}
-
-// Trigger on scroll and also when page loads
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
