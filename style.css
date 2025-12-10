@@ -291,3 +291,42 @@ footer {
     nav { flex-direction: column; text-align: center; }
     .hero-content h1 { font-size: 1.8rem; }
 }
+
+/* Self Introduction Section */
+.self-intro {
+    padding: 80px 20px;
+    margin: 60px auto;
+    max-width: 900px;
+    background: #141414;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px #00eaff25;
+}
+
+.self-intro h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    color: #00eaff;
+    text-shadow: 0 0 8px #00eaff;
+}
+
+.self-intro p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Slow fade-in reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1.4s ease, transform 1.4s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
