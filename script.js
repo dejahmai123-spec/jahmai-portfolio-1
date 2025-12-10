@@ -48,7 +48,7 @@ nav .logo {
   font-size: 24px;
   font-
      
- // Select all elements with the 'reveal' class
+// Select all elements with the 'reveal' class
 const reveals = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
@@ -59,12 +59,11 @@ function revealOnScroll() {
     const revealPoint = 150; // distance from bottom of viewport
 
     if (elementTop < windowHeight - revealPoint) {
-      reveal.classList.add("active"); // reveal the element
+      reveal.classList.add("active"); // reveal and stay
     }
-    // NO removal of 'active' so it stays visible
   });
 }
 
-// Trigger on scroll and also on page load
+// Trigger on scroll and also when page loads
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
