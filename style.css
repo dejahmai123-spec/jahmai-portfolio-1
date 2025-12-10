@@ -411,35 +411,3 @@ footer {
   margin-top: 40px;
 }
 
-// Reveal on scroll
-function revealOnScroll() {
-  const reveals = document.querySelectorAll('.reveal');
-
-  reveals.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (top < windowHeight - 100) {
-      el.classList.add('active');
-    }
-  });
-}
-
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll(); // run once on load
-
-.issue-list ol li {
-  margin-bottom: 40px;   /* space between each item */
-  padding-bottom: 10px;
-}
-/* Reveal animation */
-.reveal {
-  opacity: 0;               /* hidden initially */
-  transform: translateY(50px); /* start slightly below */
-  transition: all 1000s ease;
-}
-
-.reveal.active {
-  opacity: 1;               /* fully visible */
-  transform: translateY(0); /* move to normal position */
-}
