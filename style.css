@@ -446,5 +446,18 @@ revealOnScroll(); // run once on load
   transform: translateY(0);    /* move to original position */
 }
 
+/* Base state: hidden */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px); /* start slightly lower */
+  transition: all 0.6s ease;
+}
+
+/* When revealed */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
