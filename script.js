@@ -48,7 +48,6 @@ nav .logo {
   font-size: 24px;
   font-
      
-     function revealOnScroll() {
  // Select all elements with the 'reveal' class
 const reveals = document.querySelectorAll(".reveal");
 
