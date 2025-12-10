@@ -428,4 +428,23 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll(); // run once on load
 
+.issue-list ol li {
+  margin-bottom: 40px;   /* space between each item */
+  padding-bottom: 10px;
+}
+/* =========================
+   Scroll Reveal Animations
+========================= */
+.reveal {
+  opacity: 0;                 /* start invisible */
+  transform: translateY(30px); /* start slightly lower */
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;                  /* fade in */
+  transform: translateY(0);    /* move to original position */
+}
+
+
 
