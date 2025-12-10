@@ -49,19 +49,23 @@ nav .logo {
   font-
      
      function revealOnScroll() {
-  const reveals = document.querySelectorAll('.reveal, .issues-list li');
+ // Select all elements with the 'reveal' class
+const reveals = document.querySelectorAll(".reveal");
 
-  reveals.forEach(el => {
-    const windowHeight = window.innerHeight;
-    const elementTop = el.getBoundingClientRect().top;
-    const revealPoint = 100;
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+
+  reveals.forEach((reveal) => {
+    const elementTop = reveal.getBoundingClientRect().top;
+    const revealPoint = 150; // distance from bottom of viewport
 
     if (elementTop < windowHeight - revealPoint) {
-      el.classList.add('active');
+      reveal.classList.add("active"); // reveal the element
     }
+    // NO removal of 'active' so it stays visible
   });
 }
 
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
-
+// Trigger on scroll and also on page load
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
