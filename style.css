@@ -1,6 +1,4 @@
-/* ---------------------------
-   GLOBAL RESET + BASE STYLES
------------------------------ */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +17,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ---------------------------
-   NAVBAR ANIMATION
------------------------------ */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -68,9 +64,6 @@ nav a:hover {
     text-shadow: 0 0 10px #00eaff;
 }
 
-/* ---------------------------
-   HERO SECTION
------------------------------ */
 .hero {
     position: relative;
     width: 100%;
@@ -134,9 +127,6 @@ nav a:hover {
     100% { filter: drop-shadow(0 0 15px #8e2de2); }
 }
 
-/* ---------------------------
-   BUTTONS
------------------------------ */
 button, .btn {
     background: #0f4bff;
     color: white;
@@ -155,9 +145,7 @@ button:hover, .btn:hover {
     box-shadow: 0 0 20px #0f4bff;
 }
 
-/* ---------------------------
-   PROJECT CARDS
------------------------------ */
+
 .project-grid {
     display: grid;
     padding: 40px;
@@ -180,17 +168,13 @@ button:hover, .btn:hover {
     border-color: #00eaff;
 }
 
-/* ---------------------------
-   SCROLL REVEAL (FIXED)
------------------------------ */
+
 .reveal {
     opacity: 1 !important;
     transform: none !important;
 }
 
-/* ---------------------------
-   CONTACT FORM
------------------------------ */
+
 form input, form textarea {
     width: 100%;
     padding: 10px;
@@ -206,9 +190,6 @@ form input:focus, form textarea:focus {
     box-shadow: 0 0 10px #00eaff;
 }
 
-/* ---------------------------
-   ISSUES PREVIEW
------------------------------ */
 .issues-preview {
     background: #141414;
     padding: 60px 20px;
@@ -254,9 +235,7 @@ form input:focus, form textarea:focus {
     text-shadow: 0 0 8px #00eaff;
 }
 
-/* ---------------------------
-   PAGE LAYOUT
------------------------------ */
+
 .page-header {
     margin-top: 60px;
     margin-bottom: 30px;
@@ -271,18 +250,14 @@ form input:focus, form textarea:focus {
     font-size: 1.1rem;
 }
 
-/* ---------------------------
-   FOOTER
------------------------------ */
+
 footer {
     margin-top: 40px;
     padding: 20px 0;
     text-align: center;
 }
 
-/* ---------------------------
-   RESPONSIVE
------------------------------ */
+
 @media (max-width: 768px) {
     .hero-content h1 { font-size: 2.3rem; }
 }
